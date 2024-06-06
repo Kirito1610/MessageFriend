@@ -11,7 +11,7 @@ import 'stream-chat-react/css/v2/index.css'
 
 const cookies=new Cookies();
 const AuthToken=cookies.get('token');
-const client=StreamChat.getInstance(process.env.VITE_API_KEY);
+const client=StreamChat.getInstance("4kesj7uh3u5c");
 if (AuthToken) {
   client.connectUser({
     id: cookies.get('userID'),
